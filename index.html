@@ -3,70 +3,138 @@
     <head>
         <title>SDA Kurs HTML</title>
         <meta charset="UTF-8">
-    </head>
-    <body>
+        <style>
+            .mojaklasa {
+                background-color: green;
+            }
 
-        <header>
-            Logo firmy | <nav>glowne linki</nav>
+            #imieid {
+
+            }
+
+            img {
+
+            }
+
+            body > p {
+                background-color: red;
+            }
+
+            body span {
+                background-color: yellow;
+            }
+
+            body > span, div > span {
+                background-color: yellow;
+            }
+
+            p + img {
+
+            }
+
+            p ~ img {
+
+            }
+
+            [title] {
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="mojaklasa">
+            sLogo firmy |
+            <nav>glowne linki</nav>
+            <img src="test2.jpg" alt="Twarz2" title="Twarz1"/>
         </header>
 
         <p>
-            <form id="moj1" action="processor.html" method="get">
-                <div>
-                <label for="imieid">Imię</label>
-                <input type="text" maxlength="20" size="20" value="Ala" id="imieid" name="imie">
-                </div>
-                <div>
-                    <label for="imieid">Imię</label>
-                    <input type="" maxlength="20" size="20" value="Ala" id="imieid" name="imie">
-                </div>
-                <div>
-                <label for="dateid">Data urodzenia:</label>
-                <input type="date" maxlength="20" size="20" value="" id="dateid" name="date">
-
-                </div>
-                <div>
-                    <input type="submit" value="Wyslij">
-                </div>
-            </form>
-
-            <form id="moj2" action="processor.html" method="post">
-
-            </form>
+            <span>JEden span</span>
+            <span>Drugi span</span>
         </p>
+
+        <p>
+            Test <span>kolejny span</span>
+        </p>
+
+        <form id="moj1" action="processor.html" method="get">
+            <div class="mojaklasa">
+                <label for="imieid">Imię</label>
+                <input type="text" maxlength="20" size="20" value="Ala" id="imieid" name="imie" tabindex="3">
+            </div>
+            <div>
+                <label for="imieid">Imię</label>
+                <input type="text" maxlength="20" size="20" value="Ala" id="imieid2" name="imie"  tabindex="1">
+            </div>
+            <div>
+                <label for="wybor1id">Czy lubisz cole:</label>
+                <input type="checkbox" value="1" id="wybor1id" name="cola">
+                <label for="wybor2id">Czy lubisz pepsi:</label>
+                <input type="checkbox" value="2" id="wybor2id" name="pepsi">
+            </div>
+
+            <div>
+                <label for="radio1id">Czy lubisz cole:</label>
+                <input type="radio" value="1" id="radio1id" name="napoj">
+                <label for="radio2id">Czy lubisz pepsi:</label>
+                <input type="radio" value="2" id="radio2id" name="napoj">
+                <label for="radio3id">Czy lubisz polokokta:</label>
+                <input type="radio" value="3" id="radio3id" name="napoj-alt">
+                <label for="radio4id">Czy lubisz polozbysia:</label>
+                <input type="radio" value="4" id="radio4id" name="napoj-alt">
+            </div>
+
+            <div>
+                <input type="hidden" name="hiddenelement" value="31212">
+            </div>
+
+            <div>
+                <input type="password" name="haslo" tabindex="2">
+            </div>
+
+            <textarea rows="3" cols="20">
+            Test
+            </textarea>
+
+            <div>
+                <input type="submit" value="Wyslij">
+                <input type="button" value="button">
+            </div>
+        </form>
+
+        <form id="moj2" action="processor.html" method="post">
+
+        </form>
 
         <main>
             <article>
-        <h1>Tytul 1</h1>
-        <p>
-            Lorem ipsum<br />
-            et dolor sit amet.śćłńó
-            <nav>
-            <a href="../subdir/index2.html" target="pruchnik">poniedz</a>
-            <a href="http://www.onet.pl/" target="_blank">Link 2</a>
-            <a href="/mojapka2/index.html" target="pruchnik">wtorek</a>
-            <a href="#chapter1">Chapter 1</a>
-            </nav>
-        </p>
-        <h2>Tytul 1</h2>
-        <p id="chapter1">
-            Lorem ipsum et dolor sit amet1. <span> to jest span</span>
-        </p>
+                <h1>Tytul 1</h1>
+                <p>
+                    Lorem ipsum<br />
+                    et dolor sit amet.<sub>pod tekstem</sub>śćłńó<sup>nad tekstem</sup>
+                    <nav>
+                    <a href="../subdir/index2.html" target="pruchnik" title="Twarz">poniedz</a>
+                    <a href="http://www.onet.pl/" target="_blank">Link 2</a>
+                    <a href="/mojapka2/index.html" target="pruchnik">wtorek</a>
+                    <a href="#chapter1">Chapter 1</a>
+                    </nav>
+                </p>
+                <h2>Tytul 1</h2>
+                <p id="chapter1">
+                    Lorem ipsum et dolor sit amet1. <span> to jest span</span>
+                </p>
 
-        <div>
-            &lt;ooo&gt; &amp;
-            Jestę divę Lorem ipsum et dolor <nobr>sit&nbsp;i amet1</nobr>.
-            <p>
-            Amp &amp;amp; &copy; &trade; &uuml;
-            </p>
+                <div>
+                    Jestę divę Lorem ipsum et dolor
+                    <p>
+                    Amp &amp;amp; &copy; &trade; &uuml;
+                    </p>
+                </div>
 
-
-
-        </div>
-
-        <!--
-        komnetarz
-        -->
+                <!--
+                komentarz
+                -->
 
                 <table border="1">
                     <caption>Tytul</caption>
@@ -88,8 +156,7 @@
                     </tbody>
                 </table>
 
-        <p>
-            Lista chorych na covid:
+                Lista chorych na covid:
                 <ol>
                     <li>
                         Stanisław Kowalski
@@ -107,39 +174,29 @@
                     </li>
                 </ol>
 
-        </p>
+                Lista numerow telefonów:
+                <dl>
+                    <dt>A</dt>
+                    <dd>Alfred</dd>
+                    <dd>Ala</dd>
+                </dl>
+                <dl>
+                    <dt>B</dt>
+                    <dd>Bruno</dd>
+                    <dd>Beata</dd>
+                </dl>
 
-        <p>
-            Lista numerow telefonów:
-            <dl>
-                <dt>A</dt>
-                <dd>Alfred</dd>
-                <dd>Ala</dd>
-            </dl>
-            <dl>
-                <dt>B</dt>
-                <dd>Bruno</dd>
-                <dd>Beata</dd>
-            </dl>
-        </p>
+                <div>
 
-        <div>
+                </div>
 
-        </div>
+                <span>
 
-        <span>
-
-        </span>
-
+                </span>
             </article>
         </main>
-        <footer>
-    To jest naglowek
+        <footer class="mojaklasa">
+        To jest naglowek
         </footer>
-
-        <marquee>
-            To ja
-        </marquee>
-
     </body>
 </html>
