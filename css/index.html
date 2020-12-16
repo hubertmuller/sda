@@ -5,9 +5,72 @@
     <title>Nasza firma Sp.j</title>
     <style type="text/css">
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-size: 16pt;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            height: 80px;
+            border: 1px solid #f00;
+            padding: 10px;
+            background-color: yellow;
+        }
+
+        footer {
+            height: 30px;
+            background-color: red;
+            padding: 10px;
+            font-size: 12pt;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        input, label {
+            width: 300px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        input {
+            font-size: 16pt;
+            border: 1px solid gray;
+            background-color: #eee;
+        }
+
+        label {
+            display: inline-block;
+            text-align: right;
+        }
+
+        input:hover {
+            background-color: #cccccc;
+        }
+
+        input:focus {
+            background-color: #fff;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        p ~ p {
+            margin-top: 40px;
+        }
+
+        main {
+            margin-bottom: 50px;
+        }
+
+
     </style>
 </head>
 <body>
+    <div>
     <header>
         My header
     </header>
@@ -35,10 +98,12 @@
         <p>Poniższy formularz zapisze Ciebie na naszą białą listę. Przyłącz się a nie pożałujesz!</p>
 
         <div>
+            <label for="c">imię:</label>
             <input name="imie" id="c" type="text" form="test2">
         </div>
 
         <div>
+            <label for="cc">data urodzenia</label>
             <input name="dataur" id="cc" type="date" form="test2">
         </div>
 
@@ -51,6 +116,6 @@
     <footer>
         My footer
     </footer>
-
+    </div>
     </body>
 </html>
