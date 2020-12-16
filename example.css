@@ -1,0 +1,35 @@
+.mojaklasa {
+    background-color: green;
+}
+
+#imieid {
+
+}
+
+img {
+
+}
+
+body > p {
+    background-color: red;
+}
+
+body span {
+    background-color: yellow;
+}
+
+body > span, div > span {
+    background-color: yellow;
+}
+
+p + img {
+
+}
+
+p ~ img {
+
+}
+
+[title] {
+
+}
