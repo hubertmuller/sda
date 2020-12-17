@@ -72,6 +72,15 @@
 
         .error {
             border: 1px solid red;
+            background-color: #ffdddd;
+        }
+
+        .schowany {
+            display: none;
+        }
+
+        div.error#bladogolny {
+            margin: 20px;
         }
 
 
@@ -90,6 +99,9 @@
         <p>
             Poniższy formularz zapisze Ciebie na naszą czarną listę. Przyłącz się a pożałujesz!
         </p>
+        <div class="error" id="bladogolny">
+            Wystapil kolosalny błąd !!!
+        </div>
         <form id="test" method="get" action="test1.html">
         </form>
         <form id="test2" method="get" action="test2.html">
@@ -97,6 +109,10 @@
         <div>
             <label for="a">imię</label>
             <input name="imie" id="a" type="text" form="test">
+        </div>
+        <div>
+            <label for="aa">nazwisko</label>
+            <input name="nazwisko" id="aa" type="text" form="test">
         </div>
         <div>
             <label for="b">data urodzenia</label>
