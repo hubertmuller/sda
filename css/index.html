@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Nasza firma Sp.j</title>
 
-
     <script src="formlogic.js" type="application/javascript"></script>
 
     <style type="text/css">
@@ -71,6 +70,10 @@
             margin-bottom: 50px;
         }
 
+        .error {
+            border: 1px solid red;
+        }
+
 
     </style>
 </head>
@@ -93,22 +96,22 @@
         </form>
         <div>
             <label for="a">imię</label>
-            <input name="a" id="a" type="text" form="test">
+            <input name="imie" id="a" type="text" form="test">
         </div>
         <div>
             <label for="b">data urodzenia</label>
-            <input name="b" id="b" type="date" form="test">
+            <input name="data" id="b" type="date" form="test">
         </div>
 
         <div>
-            <input type="button" id="submit1" value="zapisz na czarną" form="test">
+            <input type="button" id="check1" value="zapisz na czarną" form="test">
         </div>
 
         <p>Poniższy formularz zapisze Ciebie na naszą białą listę. Przyłącz się a nie pożałujesz!</p>
 
         <div>
             <label for="c">imię:</label>
-            <input name="imie" id="c" type="text" form="test2">
+            <input name="imie2" id="c" type="text" form="test2">
         </div>
 
         <div>
@@ -126,8 +129,5 @@
         My footer
     </footer>
     </div>
-<script>
-    alert(2);
-</script>
     </body>
 </html>
